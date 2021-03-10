@@ -2,15 +2,33 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8">
-		<title>Untitled</title>
+		<title>my website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Michroma&family=Orbitron&family=Press+Start+2P&display=swap" rel="stylesheet">
 	</head>
   
 	<body>
     <h1>AQUAFINA</h1>
-		<h2>welcome!</h2>
+		<h2>welcome</h2>
 	</body>
   
   <div class="homepage"></div>
+  
+  <header class="header">
+    <h1 class="welcome"></h1>
+      <ul class="main-nav">
+        <li><a href="#">home</a></li>
+        <li><a href="#">spanish</a></li>
+        <li><a href="#">japanese</a></li>
+        <li><a href="#">french</a></li>
+      </ul>
+  
+  
+  
+  
+  </header>
+  
+  
 </html>
 
 <style>
@@ -23,31 +41,81 @@
   
   h1 {
     color: blue;
+    position: absolute;
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-top: 10px;
+    font-family: "Michroma", sans-serif;
+    font-size: 40px;
+    
   }
 
   h2 {
     color: white;
-    margin-left: 120px;
+    margin-left: 50px;
     position: absolute;
     z-index: 1;
-    top: 135px;
-    left: 30px;
-    font-size: 30px;
+    top: 65px;
+    font-size: 20px;
+    font-family: "DotGothic16", sans-serif;
     
   
   }
+  
+  ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .main-nav {
+	margin-top: 5px;
 
+}
+  .main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+  z-index: 2;
+}
+  .main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+  .header,
+	.main-nav {
+		display: flex;
+	}
+  
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+
+  
   .homepage {
-    background-color: #D9DADE;
+    background-color: white;
     position: absolute;
-    top: 150px;
-    left: 125px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
     z-index: 0;
     height: 600px;
     width: 600px;
-    margin: 0 auto;
     border-radius: 5px;
-    background-image: linear-gradient(#B9C9E3 50px, transparent 10px);
+    background-image: linear-gradient(#183C9F 15px, #2759E1 50px, transparent 10px);
   }
 
 
