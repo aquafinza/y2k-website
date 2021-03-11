@@ -13,9 +13,15 @@
 	</body>
   
   <div class="homepage"></div>
+  <img src="side-icon.gif" class="side-icon" alt="blinking windows xp side bar">
+  <img src="windows-icon.gif" class="windows-icon" alt="wavy windows icon">
+  
+  
   
   <header class="header">
-    <h1 class="welcome"></h1>
+    <div>
+        <h1 class="welcome"></h1>
+    </div>
       <ul class="main-nav">
         <li><a href="#">home</a></li>
         <li><a href="#">spanish</a></li>
@@ -34,7 +40,7 @@
 <style>
 
   body {
-    background-image: url(https://i.pinimg.com/originals/e3/72/53/e3725398931d71b087340b029ae2f358.gif);
+    background-image: url(https://i.pinimg.com/564x/aa/94/1b/aa941b907e794eda41f6cdaf70d2a33b.jpg);
     background-color: black;
     
   }
@@ -52,10 +58,9 @@
 
   h2 {
     color: white;
-    margin-left: 50px;
-    position: absolute;
-    z-index: 1;
-    top: 65px;
+    margin-left: 10%;
+    margin-top: 18%;
+    float: left;
     font-size: 20px;
     font-family: "DotGothic16", sans-serif;
     
@@ -73,14 +78,17 @@
 }
   .main-nav a {
 	padding: 10px 15px;
-	text-transform: uppercase;
+	
 	text-align: center;
 	display: block;
-  z-index: 2;
+  z-index: 1;
+  position: relative;
+  margin-top: 150px;
+  
 }
   .main-nav a {
-	color: #34495e;
-	font-size: .99em;
+	color: black;
+	font-size: 18px;
 }
 
 .main-nav a:hover {
@@ -102,16 +110,36 @@
 	}
 	}
 
+  .side-icon {
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 360px;
+    right: 370px;
 
+  }
+  
+  .windows-icon {
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    right: 40px;
+    
+    
+  }
+  
+  
   
   .homepage {
     background-color: white;
     position: absolute;
-    top: 50%;
+    opacity: 90%;
+    top: 55%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
-    z-index: 0;
+    z-index: -1;
     height: 600px;
     width: 600px;
     border-radius: 5px;
